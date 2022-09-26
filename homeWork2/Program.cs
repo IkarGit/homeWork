@@ -16,3 +16,13 @@ string numberS = Math.Abs(number).ToString();
 
 Console.WriteLine(numberS.Length > 2 ? $"{number} -> {numberS[2]}" : $"{numberS} -> третьей цифры нет");
     
+// Программа которая принимает на вход цифру, обозначающую день недели, 
+//и проверяет, являеться ли этот день выходным     
+
+Console.WriteLine("Введите цифру, обозначающую день недели:");
+int dayOfWeek = Convert.ToInt32(Console.ReadLine());
+string isWeekend = (dayOfWeek > 0 && dayOfWeek < 8) 
+    ? (dayOfWeek == 6 || dayOfWeek == 7) ? "да" : "нет"
+    : "не день недели";
+
+Console.WriteLine($"{dayOfWeek} -> {isWeekend}");
