@@ -81,5 +81,3 @@ Console.ReadLine();
         default:
             begin = false;
             break;
-    }
-}
